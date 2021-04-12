@@ -100,5 +100,30 @@ Optional:
    | task          | String   | upcoming task |
    | deadline      | Date     | profile image |
    | lateDate      | Count    | number of late date |
-   
+   | partner       | Pointer to User | your friend info |
+
+#### Conversation
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | friendID      | String   | unique id for your friend (default field) |
+   | friendName    | String   | name of friend |
+   | message       | Dictionary | database of text messages |
+  
+### Networking
+#### List of network requests by screen
+   - Home Screen
+      - (Read/GET) Query all reminders
+      - (Create/POST) Create a reminder
+      - (Delete) Delete an existing reminder
+      - (Update/PUT) Update a reminder
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+   - Setting
+      - (Read/GET) Query setting information
+      - (Update/PUT) Update setting option
+   - Message
+      - (Read/GET) Query all text messages
+      - (Create/POST) Send a text message
 
