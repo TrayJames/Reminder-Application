@@ -88,10 +88,17 @@ Optional:
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | userId        | String   | unique id for the user (default field) |
-   | name          | Pointer to User| image author |
+   | name          | String   | user name |
    | image         | File     | profile image |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | goal          | List     | list of goals |
+   
+#### Reminder
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the reminder (default field) |
+   | task          | String   | upcoming task |
+   | deadline      | Date     | profile image |
+   | lateDate      | Count    | number of late date |
+   
+
