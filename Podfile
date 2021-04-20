@@ -7,6 +7,7 @@ target 'Reminder App' do
   
   pod 'Parse'
   pod 'AlamofireImage'
+  pod  'FSCalendar'
 
   # Pods for Reminder App
 

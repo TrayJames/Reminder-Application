@@ -4,11 +4,12 @@
 //
 //  Created by KHOA NGUYEN on 4/15/21.
 //
-
+import FSCalendar
 import UIKit
 
 class ReminderViewController: UIViewController {
-
+    @IBOutlet weak var calendar: FSCalendar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
