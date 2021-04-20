@@ -28,10 +28,10 @@ Scheduling Application that motivates people who have similar goals and interest
 
 - [x] Users can sign up
 - [x] Users can log in
-- [x] navigate between tabs
+- [x] Navigate between tabs
 - [ ] Set up goals and remiders.
 - [ ] Scedule/calendar page
-- [ ]TO-DO page
+- [ ] TO-DO page
 - [ ] Profile pages for each user
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
