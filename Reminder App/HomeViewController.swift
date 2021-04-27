@@ -1,22 +1,22 @@
 //
-//  ReminderViewController.swift
+//  HomeViewController.swift
 //  Reminder App
 //
-//  Created by KHOA NGUYEN on 4/15/21.
+//  Created by KHOA NGUYEN on 4/27/21.
 //
-import FSCalendar
+
 import UIKit
 import Parse
 
-class ReminderViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-    @IBOutlet weak var calendar: FSCalendar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-        
+    
+
     /*
     // MARK: - Navigation
 
@@ -26,7 +26,11 @@ class ReminderViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    @IBAction func onLogoutButton(_ sender: Any) { PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        delegate.window?.rootViewController = loginViewController
+    }
 }
-
-
-
