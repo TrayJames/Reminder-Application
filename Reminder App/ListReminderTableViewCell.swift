@@ -8,7 +8,11 @@
 import UIKit
 
 class ListReminderTableViewCell: UITableViewCell {
+    
 
+    @IBOutlet weak var taskTime: UILabel!
+    @IBOutlet weak var listTask: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
