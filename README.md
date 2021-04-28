@@ -37,6 +37,8 @@ Scheduling Application that motivates people who have similar goals and interest
 - [ ] Profile pages for each user
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
+<img src='http://g.recordit.co/V8yScgkPx1.gif' />
+
 <img src='http://g.recordit.co/dkm77jwRML.gif' />
 
 **Optional Nice-to-have Stories**
