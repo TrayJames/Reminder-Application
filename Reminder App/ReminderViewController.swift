@@ -11,6 +11,10 @@ import Parse
 class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
 
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBOutlet weak var timeScroll: UIDatePicker!
     

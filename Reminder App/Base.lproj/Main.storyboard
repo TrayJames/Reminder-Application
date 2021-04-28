@@ -144,6 +144,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="euw-ls-BLS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="hCv-hz-cv2">
+                            <connections>
+                                <action selector="backButton:" destination="e97-Iy-sO5" id="ann-kw-6vE"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="QtX-fP-FDe">
                             <connections>
                                 <action selector="addTask:" destination="e97-Iy-sO5" id="rNu-Cm-LEI"/>
