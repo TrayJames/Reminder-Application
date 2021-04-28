@@ -8,12 +8,17 @@ import FSCalendar
 import UIKit
 import Parse
 
+<<<<<<< HEAD
 class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
 
     
     @IBOutlet weak var timeScroll: UIDatePicker!
     
+=======
+class ReminderViewController: UIViewController {
+
+>>>>>>> a967145a4452a907b84856132f1856858ffcdcbf
     @IBOutlet weak var calendar: FSCalendar!
     
    
@@ -21,6 +26,7 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         calendar.dataSource = self
         calendar.delegate = self
         timeScroll.datePickerMode = .time
@@ -65,6 +71,11 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         print(datestring)
     }
     
+=======
+        // Do any additional setup after loading the view.
+    }
+        
+>>>>>>> a967145a4452a907b84856132f1856858ffcdcbf
     /*
     // MARK: - Navigation
 
@@ -74,5 +85,7 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
+
+
