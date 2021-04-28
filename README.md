@@ -84,7 +84,7 @@ Optional:
 * Settings -> Toggle settings.
 
 ## Wireframes
-<img src="https://i.imgur.com/l7bsLfm.jpg" width=800><br>
+<img src="http://g.recordit.co/dkm77jwRML.gif" width=800><br>
 
 ## Schema 
 ### Models
