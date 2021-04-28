@@ -29,13 +29,17 @@ Scheduling Application that motivates people who have similar goals and interest
 - [x] Users can sign up
 - [x] Users can log in
 - [x] Navigate between tabs
-- [ ] Set up goals and remiders.
-- [ ] Scedule/calendar page
+- [x] Set up goals and remiders.
+- [x] Scedule/calendar page
+- [ ] Logout
+- [ ] Stay signed in
 - [ ] TO-DO page
 - [ ] Profile pages for each user
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
 <img src='http://g.recordit.co/V8yScgkPx1.gif' />
+
+<img src='http://g.recordit.co/dkm77jwRML.gif' />
 
 **Optional Nice-to-have Stories**
 
