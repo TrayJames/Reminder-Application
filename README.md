@@ -29,10 +29,8 @@ Scheduling Application that motivates people who have similar goals and interest
 - [x] Users can sign up
 - [x] Users can log in
 - [x] Navigate between tabs
-- [x] User can log out
-- [x] User can stayed log in
-- [x] User can set upremiders.
-- [x] Scedule/calendar page
+- [ ] Set up goals and remiders.
+- [ ] Scedule/calendar page
 - [ ] TO-DO page
 - [ ] Profile pages for each user
 - [ ] Settings (Accesibility, Notification, General, etc.)
