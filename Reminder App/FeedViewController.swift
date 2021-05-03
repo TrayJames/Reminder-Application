@@ -21,8 +21,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
 
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        fetchReminders()
+        
+    }
+    
+    func fetchReminders() {
         let query = PFQuery(className: "Reminder")
         query.includeKey("author")
         query.limit = 20

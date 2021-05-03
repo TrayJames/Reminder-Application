@@ -25,9 +25,8 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendar.dataSource = self
-        calendar.delegate = self
-        timeScroll.datePickerMode = .time
+        timeScroll.datePickerMode = .dateAndTime
+        timeScroll.preferredDatePickerStyle = .inline
         
 
         // Do any additional setup after loading the view.
