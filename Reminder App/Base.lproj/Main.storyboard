@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tQ9-HU-daY">
-                                <rect key="frame" x="0.0" y="498" width="414" height="315"/>
+                                <rect key="frame" x="0.0" y="536" width="414" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -126,9 +126,12 @@
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k1I-WW-wWK">
                                 <rect key="frame" x="16" y="104" width="382" height="216"/>
                             </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Task Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAi-QY-9gH">
-                                <rect key="frame" x="16" y="443" width="264" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Task Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAi-QY-9gH">
+                                <rect key="frame" x="16" y="336" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="382" id="7jN-AF-ETm"/>
+                                    <constraint firstAttribute="height" constant="50" id="drq-EL-wkI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -136,9 +139,13 @@
                         <viewLayoutGuide key="safeArea" id="gRh-QN-BSm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VAi-QY-9gH" firstAttribute="top" secondItem="k1I-WW-wWK" secondAttribute="bottom" constant="16" id="0ES-PO-jaV"/>
                             <constraint firstItem="k1I-WW-wWK" firstAttribute="leading" secondItem="gRh-QN-BSm" secondAttribute="leading" constant="16" id="4Ti-8D-bKA"/>
                             <constraint firstItem="gRh-QN-BSm" firstAttribute="trailing" secondItem="k1I-WW-wWK" secondAttribute="trailing" constant="16" id="6ZW-BV-xtv"/>
+                            <constraint firstItem="gRh-QN-BSm" firstAttribute="trailing" secondItem="VAi-QY-9gH" secondAttribute="trailing" constant="16" id="Qkq-aA-iUh"/>
                             <constraint firstItem="k1I-WW-wWK" firstAttribute="top" secondItem="gRh-QN-BSm" secondAttribute="top" constant="16" id="XzL-Wl-cpk"/>
+                            <constraint firstItem="gRh-QN-BSm" firstAttribute="trailing" secondItem="VAi-QY-9gH" secondAttribute="trailing" constant="16" id="fLu-3v-dzG"/>
+                            <constraint firstItem="VAi-QY-9gH" firstAttribute="top" secondItem="k1I-WW-wWK" secondAttribute="bottom" constant="16" id="gSS-wB-vSb"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

@@ -17,9 +17,7 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     
     @IBOutlet weak var timeScroll: UIDatePicker!
-    
     @IBOutlet weak var calendar: FSCalendar!
-    
    
     @IBOutlet weak var remindDescription: UITextField!
     
@@ -27,10 +25,26 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         super.viewDidLoad()
         timeScroll.datePickerMode = .dateAndTime
         timeScroll.preferredDatePickerStyle = .inline
+        timeScroll.addTarget(self, action: #selector(handleTimeSelection), for: .valueChanged)
         
 
         // Do any additional setup after loading the view.
     }
+    @objc func handleDateSelection(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en-gb")
+        formatter.dateFormat = "hh:mm"
+        remindDescription.text = formatter.string(from: sender.date)
+        
+    }
+    @objc func handleTimeSelection(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en-gb")
+        formatter.dateFormat = "dd MM YY"
+        remindDescription.text = formatter.string(from: sender.date)
+        
+    }
+
 
     
     
@@ -45,9 +59,11 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     //}
 
     @IBAction func addTask(_ sender: Any) {
+        
         let remind = PFObject(className: "Reminder")
         remind["description"] = remindDescription.text!
         //remind["time"] =
+
         //remind["date"] = datestring
         remind["author"] = PFUser.current()!
         remind.saveInBackground{ (success, error) in
