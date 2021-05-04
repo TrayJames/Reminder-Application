@@ -31,10 +31,10 @@ Scheduling Application that motivates people who have similar goals and interest
 - [x] Navigate between tabs
 - [x] Set up goals and remiders.
 - [x] Scedule/calendar page
-- [ ] Logout
-- [ ] Stay signed in
-- [ ] TO-DO page
-- [ ] Profile pages for each user
+- [x] Logout
+- [x] Stay signed in
+- [x] Nice TO-DO page
+- [x] Launch screen
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
 <img src='http://g.recordit.co/V8yScgkPx1.gif' />
