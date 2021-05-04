@@ -37,6 +37,8 @@ Scheduling Application that motivates people who have similar goals and interest
 - [x] Launch screen
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
+<img src='http://g.recordit.co/7DS4TmTyKm.gif' />
+
 <img src='http://g.recordit.co/V8yScgkPx1.gif' />
 
 <img src='http://g.recordit.co/dkm77jwRML.gif' />
