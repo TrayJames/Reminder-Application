@@ -8,7 +8,7 @@ import FSCalendar
 import UIKit
 import Parse
 
-class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+class ReminderViewController: UIViewController {
     
 
     @IBAction func backButton(_ sender: Any) {
@@ -18,39 +18,23 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     @IBOutlet weak var timeScroll: UIDatePicker!
     @IBOutlet weak var calendar: FSCalendar!
-   
     @IBOutlet weak var remindDescription: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timeScroll.datePickerMode = .dateAndTime
         timeScroll.preferredDatePickerStyle = .inline
-        timeScroll.addTarget(self, action: #selector(handleTimeSelection), for: .valueChanged)
+        timeScroll.addTarget(self, action: #selector(handleDateSelection), for: .valueChanged)
         
 
         // Do any additional setup after loading the view.
     }
+    
     @objc func handleDateSelection(sender: UIDatePicker) {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en-gb")
         formatter.dateFormat = "hh:mm"
         remindDescription.text = formatter.string(from: sender.date)
-        
-    }
-    @objc func handleTimeSelection(sender: UIDatePicker) {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en-gb")
-        formatter.dateFormat = "dd MM YY"
-        remindDescription.text = formatter.string(from: sender.date)
-        
-    }
-
-
-    
-    
-    
-    func minimumDate(for calendar: FSCalendar) -> Date {
-        return Date()
     }
     
     //func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
@@ -62,8 +46,7 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         
         let remind = PFObject(className: "Reminder")
         remind["description"] = remindDescription.text!
-        //remind["time"] =
-
+        remind["datetime"] =  timeScroll.date
         //remind["date"] = datestring
         remind["author"] = PFUser.current()!
         remind.saveInBackground{ (success, error) in
@@ -76,12 +59,6 @@ class ReminderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         }
         
        
-    }
-    func calendarCurrentPageDidChange(_ calendar: FSCalendar, didSelect date: Date, at monthPosit: FSCalendarMonthPosition) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd-YYYY"
-        let datestring = formatter.string(from: date)
-        print(datestring)
     }
     
     /*

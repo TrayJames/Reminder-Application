@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A36E6DFCBF54511A82FF767 /* Pods_Reminder_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC37FAD5AC1750DAC13468 /* Pods_Reminder_App.framework */; };
 		14D52EF0D45781F822386E5F /* Pods_Reminder_App_Reminder_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A02AE3C7370180743632F3 /* Pods_Reminder_App_Reminder_AppUITests.framework */; };
 		3D167DB957DD3750E518817A /* Pods_Reminder_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1305D9F984ED54AAA185FF6 /* Pods_Reminder_AppTests.framework */; };
 		6EB076E0262922C500DFC01D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB076DF262922C500DFC01D /* LoginViewController.swift */; };
@@ -19,6 +18,7 @@
 		6EC9DCEF2627876B0037B8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC9DCED2627876B0037B8DA /* LaunchScreen.storyboard */; };
 		6EC9DCFA2627876B0037B8DA /* Reminder_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9DCF92627876B0037B8DA /* Reminder_AppTests.swift */; };
 		6EC9DD052627876B0037B8DA /* Reminder_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9DD042627876B0037B8DA /* Reminder_AppUITests.swift */; };
+		9517B8B62641F801003853A3 /* Pods_Reminder_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC37FAD5AC1750DAC13468 /* Pods_Reminder_App.framework */; };
 		954557EE2638E61300E01E07 /* ListReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954557ED2638E61300E01E07 /* ListReminderTableViewCell.swift */; };
 		954557F32638E92000E01E07 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954557F22638E92000E01E07 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A36E6DFCBF54511A82FF767 /* Pods_Reminder_App.framework in Frameworks */,
+				9517B8B62641F801003853A3 /* Pods_Reminder_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

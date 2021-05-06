@@ -48,7 +48,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListReminderTableViewCell") as! ListReminderTableViewCell
         let reminder = reminderlist[indexPath.row]
         cell.listTask.text = reminder["description"] as? String
-        //cell.taskTime.text = reminderlist["datetime"] as String!
+        cell.taskTime.text = reminder["datetime"] as? String
         return cell
         
     }
