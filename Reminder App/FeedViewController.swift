@@ -31,11 +31,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func fetchReminders() {
         let query = PFQuery(className: "Reminder")
         query.includeKey("author")
+        query.includeKey("datetime")
+        query.whereKey("author", equalTo: PFUser.current())
         query.limit = 20
         query.findObjectsInBackground { (reminderlist, error) in
             if reminderlist != nil {
                 self.reminderlist = reminderlist!
+                self.reminderlist.reverse()
                 self.tableView.reloadData()
+                print(reminderlist)
             }
         }
     }
@@ -48,9 +52,24 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListReminderTableViewCell") as! ListReminderTableViewCell
         let reminder = reminderlist[indexPath.row]
         cell.listTask.text = reminder["description"] as? String
-        cell.taskTime.text = reminder["datetime"] as? String
+        
+        cell.taskTime.text = formatDate(Date: reminder["datetime"])
+        //print(reminder["datetime"], "this is date" )
+       // let t = type(of: reminder["datetime"])
+          //  print("'\(t)'")
         return cell
         
+    }
+    
+    func formatDate(Date : Any?) -> String {
+        if let dD = Date as? Date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMMM dd yyyy - h:mm"
+            let str = dateFormatter.string(from: dD)
+            print("Depart date \(str)")
+            return str
+        }
+        return ""
     }
 
     /*
