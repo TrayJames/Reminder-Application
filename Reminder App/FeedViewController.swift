@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import UserNotifications
 import Parse
+import Foundation
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -52,15 +54,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListReminderTableViewCell") as! ListReminderTableViewCell
         let reminder = reminderlist[indexPath.row]
         cell.listTask.text = reminder["description"] as? String
-        
         cell.taskTime.text = formatDate(Date: reminder["datetime"])
-        //print(reminder["datetime"], "this is date" )
-       // let t = type(of: reminder["datetime"])
-          //  print("'\(t)'")
+
         return cell
-        
     }
+
+//        print(reminder["datetime"], "this is date" )
+//        print(type(of: reminder["datetime"]), "this is type")
+//        return cell
+////
     
+    
+ 
     func formatDate(Date : Any?) -> String {
         if let dD = Date as? Date {
             let dateFormatter = DateFormatter()

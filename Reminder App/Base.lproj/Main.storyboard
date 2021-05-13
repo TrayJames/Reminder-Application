@@ -134,14 +134,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-eS-roe">
-                                <rect key="frame" x="20" y="403" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Remind Me"/>
-                                <connections>
-                                    <action selector="didTapTest" destination="e97-Iy-sO5" eventType="touchUpInside" id="P8a-ao-tqq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gRh-QN-BSm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -265,6 +257,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Create Task" image="plus.app" catalog="system" id="Cfp-4L-ZBd">
                             <connections>
+                                <action selector="tapButton:" destination="Rh2-sY-8ju" id="n90-Yw-0kd"/>
                                 <segue destination="CTB-p8-nac" kind="presentation" id="Ito-tN-YOJ"/>
                             </connections>
                         </barButtonItem>
