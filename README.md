@@ -35,7 +35,12 @@ Scheduling Application that motivates people who have similar goals and interest
 - [x] Stay signed in
 - [x] Nice TO-DO page
 - [x] Launch screen
+- [x] View time
+- [x] Allow notification
+- [x] View personalized reminders only
 - [ ] Settings (Accesibility, Notification, General, etc.)
+
+<img src='http://g.recordit.co/exFJGvSekg.gif' />
 
 <img src='http://g.recordit.co/7DS4TmTyKm.gif' />
 
